@@ -11,6 +11,16 @@ Currently, in sasha folder:
 * expanded_hyperparameter_tune.csv holds all models, with a tuple of validation loss; rank by lowest to find best model
 * script.py finds best test model, tests against big dataset of flights, outputs evaluation metrics >> test_set_evaluations.py and some pngs into subdir
 
+Current metrics, evaluated on best model hyperparameters:
+Total Test Samples:        24,711
+Average KL Divergence:     0.42
+Average MSE (Count):       7,622.39
+Average RMSE (Count):      87.31
+Average MAE (Count):       65.80
+Count Error Std Dev:       57.39
+Count Error Median:        53.06
+Count Error Max:           741.66
+
 Next steps:
 * look at evaluation metrics and see what is good, bad, how fix
    - talk to somebody that understands better than me; Ken, Jackson, AA point person (?)

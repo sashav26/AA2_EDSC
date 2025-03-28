@@ -13,12 +13,19 @@ Currently, in sasha folder:
 
 Current metrics, evaluated on best model hyperparameters:
 Total Test Samples:        24,711
+
 Average KL Divergence:     0.42
+
 Average MSE (Count):       7,622.39
+
 Average RMSE (Count):      87.31
+
 Average MAE (Count):       65.80
+
 Count Error Std Dev:       57.39
+
 Count Error Median:        53.06
+
 Count Error Max:           741.66
 
 Next steps:

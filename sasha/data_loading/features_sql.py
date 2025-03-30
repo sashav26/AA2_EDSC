@@ -21,6 +21,7 @@ SELECT
 FROM LOCAL_DATABASE.ORAAUE.BAGROOM_ARRIVAL
 GROUP BY ALL;
 """
+
 load_dotenv()
 user=os.getenv("user")
 password = os.getenv("pass")

@@ -46,7 +46,11 @@ from fitter import Fitter
 import matplotlib.pyplot as plt
 
 # Fit the distribution to the "data" you extracted earlier
-f = Fitter(data, distributions=['norm', 'expon', 'lognorm']) # Specify simpler distributions
+f = Fitter(data, distributions=[
+    'norm', 'lognorm', 'expon', 'gamma', 'beta', 'weibull_min',
+        'weibull_max', 'uniform', 'triang', 'pareto', 'cauchy', 't',
+        'chi2', 'logistic'
+])
 f.fit()
 
 # Print the best distribution

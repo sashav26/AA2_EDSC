@@ -1,5 +1,7 @@
 import snowflake.connector
 import pandas as pd
+import os
+from dotenv import load_dotenv
 
 query_flight_features = """
 SELECT
@@ -20,10 +22,15 @@ FROM LOCAL_DATABASE.ORAAUE.BAGROOM_ARRIVAL
 GROUP BY ALL;
 """
 
+load_dotenv()
+user=os.getenv("user")
+password = os.getenv("pass")
+act = os.getenv("account")
+
 conn = snowflake.connector.connect(
-    user='EMORY_spring2025_group02',
-    password='EDSC2025spring',
-    account='aa-itor-universities',
+    user=user,
+    password=password,
+    account=act,
     warehouse='UNIVERSITY_READER',
     database='LOCAL_DATABASE',
     schema='ORAAUE'
